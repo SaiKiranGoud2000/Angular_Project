@@ -1,0 +1,10 @@
+.container { max-width: 900px; margin: 24px auto; font-family: Arial, sans-serif; }
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; }
+.toolbar input { flex: 1; padding: 8px; }
+.button { padding: 8px 12px; cursor: pointer; }
+.table { width: 100%; border-collapse: collapse; }
+.th, td { border: 1px solid #ddd; padding: 8px; text-align: left;}
+th { background: #f4f4f4; }
+.badge { padding: 2px 8px; border-radius: 10px; background: #ffe9b3; }
+.badge.done { background: #c8f2c8; }
+.error { color: #c00; }

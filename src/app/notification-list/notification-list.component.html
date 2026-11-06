@@ -1,0 +1,23 @@
+<div class="container"><h2>Notification Dashboard</h2>
+
+<div class="toolbar"><input type="text" [formControl]="search" placeholder="Search name, phone or product" /><button (click)="loadData()">Refresh</button></div>
+
+<p *ngIf="loading">Loading...</p>
+<p class="error" *ngIf="error">{{ error }}</p>
+<p *ngIf="!loading && !error && filtered.length === 0">No notification found</p>
+<table *ngIf="filtered.length > 0">
+    <thead><tr><th>Customer</th><th>Phone</th><th>Email</th><th>Product</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+    <tbody>
+        <tr *ngFor="let n of filtered; trackBy: trackById">
+            <td>{{ n.customerName }}</td>
+            <td>{{ n.phone }}</td>
+            <td>{{ n.email }}</td>
+            <td>{{ n.productName}}</td>
+            <td>{{n.createdAt}}</td>
+            <td><span class="badge" [class.done]="n.status === 'contacted'">{{ n.status}}</span></td>
+            <td><button (click)="markContacted(n)" [disabled]="n.status === 'contacted'">Mark contacted</button></td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

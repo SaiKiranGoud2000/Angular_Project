@@ -1,0 +1,49 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "customerName": "Ravi Kumar",
+      "phone": "9876543210",
+      "email": "ravi@example.com",
+      "productName": "Gold Ring",
+      "createdAt": "2026-11-01",
+      "status": "new"
+    },
+    {
+      "id": 2,
+      "customerName": "Anita Rao",
+      "phone": "9123456780",
+      "email": "anita@example.com",
+      "productName": "Gold Chain",
+      "createdAt": "2026-11-01",
+      "status": "new"
+    },
+    {
+      "id": 3,
+      "customerName": "Suresh Babu",
+      "phone": "9988776655",
+      "email": "suresh@example.com",
+      "productName": "Bangle",
+      "createdAt": "2026-10-31",
+      "status": "new"
+    },
+    {
+      "id": 4,
+      "customerName": "Meena Devi",
+      "phone": "9012345678",
+      "email": "meena@example.com",
+      "productName": "Necklace",
+      "createdAt": "2026-10-30",
+      "status": "new"
+    },
+    {
+      "id": 5,
+      "customerName": "Kiran Reddy",
+      "phone": "9345678901",
+      "email": "kiran@example.com",
+      "productName": "Earrings",
+      "createdAt": "2026-10-29",
+      "status": "new"
+    }
+  ]
+}
